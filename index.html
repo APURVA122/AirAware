@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AirAware Bharat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirAware Bharat - Air Quality Visualizer & Forecast</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  FIRST HACKATHON
-  
+    <header>
+        <nav class="container">
+            <div class="logo">AirAware Bharat</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Live Demo</a></li>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>AirAware Bharat</h1>
+            <p>Empowering Rural India with Real-time Air Quality Intelligence</p>
+            <a href="#demo" class="cta-button">🚀 Explore Live Demo</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🗺️</span>
+                    <h3>Localized AQI Visualizer</h3>
+                    <p>Interactive map displaying current Air Quality Index for rural and smaller urban locations with 1 km² resolution using ISRO satellite data.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🌧️</span>
+                    <h3>Integrated Forecasting</h3>
+                    <p>3-day AQI forecast and 1-week rain prediction crucial for agricultural planning and daily activities in rural areas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🏥</span>
+                    <h3>Health Alert System</h3>
+                    <p>Personalized health advisories for families with specific guidance for children, elderly, and vulnerable populations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🎤</span>
+                    <h3>Voice-Enabled Kheti Mitra</h3>
+                    <p>Interactive chatbot supporting Hindi and regional languages, helping farmers with voice-based queries and agricultural advice.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🌾</span>
+                    <h3>Crop Suggestion Panel</h3>
+                    <p>Tailored crop advice based on current air quality, weather conditions, and seasonal data for informed farming decisions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3>SMS & WhatsApp Alerts</h3>
+                    <p>Critical AQI warnings, health tips, and farming advice delivered via SMS and WhatsApp for maximum reach in rural areas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Smart Precaution Engine</h3>
+                    <p>Automatically suggests precautions based on detected AQI levels and weather conditions with multilingual support.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🏫</span>
+                    <h3>School/Community Dashboard</h3>
+                    <p>Simplified dashboard for local schools and community centers to monitor air quality and receive general advisories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="demo-section">
+        <div class="container">
+            <h2 class="section-title">Live Demo</h2>
+            <div class="demo-container">
+                <div class="aqi-display">
+                    <h3>Current AQI - Ghaziabad, UP</h3>
+                    <div class="aqi-circle">156</div>
+                    <p><strong>Unhealthy</strong></p>
+                    <p>PM2.5: 89 µg/m³ | PM10: 142 µg/m³</p>
+                    <p>🌡️ Temp: 28°C | 💨 Wind: 12 km/h</p>
+                </div>
+                
+                <div class="chatbot-demo">
+                    <h3>🎤 Kheti Mitra - Chat-Bot</h3>
+                </br>
+                      <div class="button-showcase">
+                        <div class="button-label"></div>
+                        <a href="#" class="kheti-chatbot-btn">
+                            🤖 Chat with Kheti Mitra
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="forecast-section">
+        <div class="container">
+            <h2 class="section-title">3-Day AQI & Weather Forecast</h2>
+            <div class="forecast-grid">
+                <div class="forecast-card">
+                    <h4>Today</h4>
+                    <div style="font-size: 2rem; margin: 1rem 0;">156</div>
+                    <p>Unhealthy</p>
+                    <p>🌧️ 20% Rain</p>
+                    <p>🌡️ 28°C</p>
+                </div>
+                <div class="forecast-card">
+                    <h4>Tomorrow</h4>
+                    <div style="font-size: 2rem; margin: 1rem 0;">134</div>
+                    <p>Unhealthy</p>
+                    <p>🌧️ 60% Rain</p>
+                    <p>🌡️ 25°C</p>
+                </div>
+                <div class="forecast-card">
+                    <h4>Day After</h4>
+                    <div style="font-size: 2rem; margin: 1rem 0;">98</div>
+                    <p>Moderate</p>
+                    <p>🌧️ 80% Rain</p>
+                    <p>🌡️ 24°C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="alerts-section" id="alerts">
+        <div class="container">
+            <h2 class="section-title">Live Health & Farming Alerts</h2>
+            <div class="alert-card">
+                <div class="alert-header">🚨 Health Alert - Ghaziabad</div>
+                <p>Air quality is unhealthy. Limit outdoor exposure for children and elderly. Wear N95 masks if going outside.</p>
+                <small>📅 Today, 2:30 PM</small>
+            </div>
+            <div class="alert-card">
+                <div class="alert-header">🌾 Farming Advisory</div>
+                <p>Expected rain in next 24 hours. Postpone pesticide spraying. Good time for transplanting rice seedlings.</p>
+                <small>📅 Today, 1:15 PM</small>
+            </div>
+            <div class="alert-card">
+                <div class="alert-header">🏫 School Advisory</div>
+                <p>Air quality poor. Recommend indoor activities for school children. Cancel outdoor sports events.</p>
+                <small>📅 Today, 12:00 PM</small>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🌬️ AirAware Bharat</h4>
+                    <p>Empowering Rural India with Real-time Air Quality Intelligence using Indigenous ISRO Satellite Data</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Key Features</h4>
+                    <ul>
+                        <li><a href="#">🗺️ Localized AQI Mapping</a></li>
+                        <li><a href="#">🎤 Voice-Enabled Assistant</a></li>
+                        <li><a href="#">🌾 Crop Advisory System</a></li>
+                        <li><a href="#">📱 SMS/WhatsApp Alerts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Communities</h4>
+                    <ul>
+                        <li><a href="#">👨‍🌾 Farmers</a></li>
+                        <li><a href="#">🏫 Schools</a></li>
+                        <li><a href="#">🏥 Health Workers</a></li>
+                        <li><a href="#">🏘️ Rural Communities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">📧 info@airawarebharat.in</a></li>
+                        <li><a href="#">📞 1800-AIR-HELP</a></li>
+                        <li><a href="#">🌐 www.airawarebharat.gov.in</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #34495e; padding-top: 2rem; margin-top: 2rem;">
+                <p>&copy; 2025 AirAware Bharat - A Digital India Initiative | Powered by ISRO Satellite Data</p>
+                <p>🇮🇳 Built for Rural India, for ATAMNIRBHAR BHARAT | ISRO Hackathon 2025</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

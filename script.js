@@ -26,3 +26,35 @@
                 });
             });
         });
+
+let darkmode =localStorage.getItem('darkmode')
+const themeswitch = document.getElementById('theme-switch');
+
+const  enabledarkmode = () =>{
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode','active');
+};
+
+const disabledarkmode = () =>{
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode','inactive');
+};
+
+if(localStorage.getItem('darkmode')==='active'){
+    enabledarkmode();
+}
+themeswitch.addEventListener('click',()=>{
+    const  dark = document.body.classList.contains('darkmode');
+    if(dark){
+        disabledarkmode();
+    }else{
+        enabledarkmode();
+    }
+});
+
+
+// if(darkmode === "active") enabledarkmode()
+
+// themeswitch.addEventListener('click',()=>{
+//     darkmode!=="active" ? enabledarkmode() : disabledarkmode()
+// })
